@@ -1,0 +1,21 @@
+@media (min-width: 48em) {
+  .o-row {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+
+  .o-col {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+
+@media print {
+  .o-row,
+  .o-col {
+    width: 100%;
+    display: block;
+  }
+}

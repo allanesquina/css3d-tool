@@ -1,0 +1,10 @@
+.ctrl {
+  display: flex;
+  flex-direction: column;
+  transform: rotate3d(1, 7, -14, 10deg) rotateY(44deg);
+
+  pre {
+    color: #c25f80;
+  }
+}
+

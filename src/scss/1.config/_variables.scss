@@ -1,0 +1,15 @@
+// Colors
+$brand-primary:    #252128;
+
+// Objects
+$text-color:       #42427c;
+$link-color:       $brand-primary;
+$link-hover-color: lighten($link-color, 10%);
+
+$selection-bg-color: $link-color;
+$selection-text-color: $text-color;
+
+$btn-color-primary: #fff;
+
+// Typography
+$font-family-base: sans-serif;

@@ -1,0 +1,100 @@
+/* stylelint-disable */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 50%;
+  margin: 9.2px 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(132, 117, 208, 0.39);
+  border-radius: 0.7px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1.6px 1.6px 9.1px rgba(7, 75, 149, 0.29), 0px 0px 1.6px rgba(8, 87, 173, 0.29);
+  border: 1.7px solid rgba(150, 94, 53, 0.58);
+  height: 21px;
+  width: 12px;
+  border-radius: 25px;
+  background: #c287ff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9.2px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(173, 163, 224, 0.39);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: rgba(132, 117, 208, 0.39);
+  border-radius: 0.7px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1.6px 1.6px 9.1px rgba(7, 75, 149, 0.29), 0px 0px 1.6px rgba(8, 87, 173, 0.29);
+  border: 1.7px solid rgba(150, 94, 53, 0.58);
+  height: 21px;
+  width: 12px;
+  border-radius: 25px;
+  background: #c287ff;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2.6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: rgba(91, 71, 192, 0.39);
+  border: 0px solid #000000;
+  border-radius: 1.4px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+
+input[type=range]::-ms-fill-upper {
+  background: rgba(132, 117, 208, 0.39);
+  border: 0px solid #000000;
+  border-radius: 1.4px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 1.6px 1.6px 9.1px rgba(7, 75, 149, 0.29), 0px 0px 1.6px rgba(8, 87, 173, 0.29);
+  border: 1.7px solid rgba(150, 94, 53, 0.58);
+  height: 21px;
+  width: 12px;
+  border-radius: 25px;
+  background: #c287ff;
+  cursor: pointer;
+  height: 2.6px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(132, 117, 208, 0.39);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(173, 163, 224, 0.39);
+}
+
+

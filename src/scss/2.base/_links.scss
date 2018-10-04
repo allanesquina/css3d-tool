@@ -1,0 +1,21 @@
+a {
+  color: $link-color;
+  transition: .2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+
+  &:active {
+    /* stylelint-disable-line */
+  }
+
+  &:visited {
+    // Filling this one is good UX.
+  }
+
+  @media print {
+    word-wrap: break-word;
+  }
+}
