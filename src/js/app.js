@@ -1,10 +1,9 @@
-(function(win, doc) {
+(function (win, doc) {
+  'use strict'
 
-  'use strict';
-
-  var $tab = doc.getElementById('tabs');
-  var $code = doc.getElementById('code');
-  var INTERVAL;
+  var $tab = doc.getElementById('tabs')
+  var $code = doc.getElementById('code')
+  var INTERVAL
 
   var props = {
     rx: 5,
@@ -16,41 +15,41 @@
     sx: 1.30,
     sy: 1.30,
     perspective: 0
-  };
-
-  function init() {
-    bindEvent();
-    applyStyles();
   }
 
-  function bindEvent() {
-    var els = doc.querySelectorAll('.ctrls');
-    els.forEach(function(el) {
-      el.addEventListener('input', change, false);
-    });
+  function init () {
+    bindEvent()
+    applyStyles()
   }
 
-  function change(e) {
-    e.preventDefault();
+  function bindEvent () {
+    var els = doc.querySelectorAll('.ctrls')
+    els.forEach(function (el) {
+      el.addEventListener('input', change, false)
+    })
+  }
 
-    var el = e.target;
-    var type = el.getAttribute('data-type');
-    var rule = el.getAttribute('data-rule');
-    var n = el.value;
+  function change (e) {
+    e.preventDefault()
 
-    if(rule) {
-      n = new Function(`return ${rule}`).call(el, []);
+    var el = e.target
+    var type = el.getAttribute('data-type')
+    var rule = el.getAttribute('data-rule')
+    var n = el.value
+
+    if (rule) {
+      n = new Function(`return ${rule}`).call(el, [])
     }
 
-    props[type] = n;
+    props[type] = n
 
-    applyStyles();
-  };
+    applyStyles()
+  }
 
-  function applyStyles() {
-    clearInterval(INTERVAL);
-    INTERVAL = setTimeout(function() {
-      var str = 
+  function applyStyles () {
+    clearInterval(INTERVAL)
+    INTERVAL = setTimeout(function () {
+      var str =
         `
         transform: 
           perspective(${props.perspective}px) 
@@ -62,11 +61,11 @@
           translateY(${props.ty}px)
           scaleX(${props.sx})
           scaleY(${props.sy})
-        `;
-      $code.innerHTML = str;
-      $tab.setAttribute('style', str);
-    }, 10);
-  };
+        `
+      $code.innerHTML = str
+      $tab.setAttribute('style', str)
+    }, 10)
+  }
 
-  init();
+  init()
 }(window, document))
